@@ -26,6 +26,22 @@
     <!-- jvectormap -->
     <link rel="stylesheet" href="{% static 'css/jquery-jvectormap.css' %}">
 
+	<style>
+    .rupee-circle {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #e0e0e0; /* Light gray background */
+      color: #333;               /* Dark text */
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+
     <script src="{% static 'js/modernizr.min.js' %}"></script>
 </head>
 
@@ -134,7 +150,7 @@
 					<div class="col-md-4">
 						<div class="widget-area proclinic-box-shadow color-yellow">
 							<div class="widget-left">
-								<span class="ti-money"></span>
+								<span class="rupee-circle">&#8377;</span>
 							</div>
 							<div class="widget-right">
 								<h4 class="wiget-title">Total Revenue</h4>
@@ -287,4 +303,5 @@
 
 
 </html>
+
 
